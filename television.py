@@ -51,10 +51,17 @@ class Television:
                 self.__muted = False
 
     def volume_down(self):
+        #decrease tv volume
+
         if self.__status:
             if self.__volume > self.min_volume:
                 self.__volume -= 1
                 self.__muted = False
+
+    def __str__(self):
+        #returning string to tv
+
+        return f'Power={self.__status}, Channel={self.__channel},Volume={self.__volume}'
 
 
 
