@@ -33,4 +33,13 @@ class Television:
             else:
                 self.channel += 1
 
+    def channel_down(self):
+        #tv channel goes down
+
+        if self.__status:
+            if self.__channel == self.min_channel:
+                self.__channel = self.max_channel
+            else:
+                self.channel -= 1
+
 
