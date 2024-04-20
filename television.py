@@ -14,4 +14,9 @@ class Television:
         self.__volume = self.min_volume
         self.__channel = self.min_channel
 
+    def power(self):
+        #setting for the television on/off
+
+        self.__statues = not self.__statues
+        
 
