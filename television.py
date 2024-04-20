@@ -24,4 +24,13 @@ class Television:
         if self.__status:
             self.__muted = not self.__muted
 
+    def channel_up(self):
+        #tv channel goes up
+
+        if self.__status:
+            if self.__channel == self.max_channel:
+                self.__channel = self.min_channel
+            else:
+                self.channel += 1
+
 
