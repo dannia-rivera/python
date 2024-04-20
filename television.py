@@ -42,4 +42,12 @@ class Television:
             else:
                 self.channel -= 1
 
+    def volume_up(self):
+        #this increases the volume for the tv
+
+        if self.__status:
+            if self.__volume > self.min_volume:
+                self.__volume -= 1
+                self.__muted = False
+
 
