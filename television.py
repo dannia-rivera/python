@@ -9,7 +9,7 @@ class Television:
     def __init__(self):
         #setting up default values
 
-        self.__statues = False
+        self.__status = False
         self.__muted = False
         self.__volume = self.min_volume
         self.__channel = self.min_channel
@@ -17,6 +17,11 @@ class Television:
     def power(self):
         #setting for the television on/off
 
-        self.__statues = not self.__statues
-        
+        self.__status = not self.__status
+
+    def mute(self):
+        #mute and unmute setting
+        if self.__status:
+            self.__muted = not self.__muted
+
 
